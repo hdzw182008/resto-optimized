@@ -1,0 +1,67 @@
+@media screen and (min-width: 1200px){
+    .hero{
+      min-width: 1000px;
+    }
+    .menu{
+      padding: 15px;
+    }
+
+  }
+  @media screen and (max-width: 1000px) {
+    .hero, .menu_info, .menu_drink, .menu_review{
+      min-width: 100%;
+    }
+    .menu{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .menu_detail, .content, .menu{
+      padding: 10px;
+    }
+    .title, .menu_title{
+      font-size: 30px;
+    }
+  .menu_detail_info, .menu_detail_drink, .menu_detail_food, .menu_detail_review{
+    font-size: large;
+  }
+  }
+  @media screen and (max-width: 650px){
+    .menu_info, .menu_drink, .menu_review{
+      min-width: 100%;
+      display: block;
+    }
+    .menu{
+      grid-template-columns: 1fr;
+    }
+    .hamburger{
+      display: inline;
+    }
+    nav{
+      height: 60%;
+      transform: translate(-3000px, 0);
+      transition: transform 0.3s ease-in-out;
+      position: absolute;
+    }
+    .list_item{
+      display: block;
+      width: 100%;
+      margin-top: 5%;
+    }
+    #drawer{
+      transform: translate(0,0) !important;
+    }
+    .menu_detail{
+      padding: 5px;
+    }
+    .menu_poster{
+      display: block;
+      width: 80%;
+    }
+    .menu_detail_poster{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .menu_detail_info, .menu_detail_drink, .menu_detail_food, .menu_detail_review{
+      font-size: medium;
+    }
+  }
